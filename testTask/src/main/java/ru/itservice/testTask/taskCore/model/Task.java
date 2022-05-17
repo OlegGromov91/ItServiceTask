@@ -17,7 +17,7 @@ import java.sql.Timestamp;
 public class Task {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer taskId;
+    private Long taskId;
 
     @Column(name = "creation_date")
     private Timestamp creationDate;

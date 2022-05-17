@@ -3,7 +3,7 @@ package ru.itservice.testTask.model;
 public enum TaskType {
 
     LEXICOGRAPHIC_ORDER("Поиск слов по лексиграфическому порядку"),
-    HALF_MAGIC_CUBE("полумагический куб");
+    HALF_MAGIC_CUBE("Полумагический куб");
 
     private final String type;
 

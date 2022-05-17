@@ -20,4 +20,9 @@ public class TaskService {
     public List<Task> showTasks() {
         return (List<Task>) taskRepository.findAll();
     }
+
+    @Transactional
+    public void saveTask(Task task) {
+        taskRepository.save(task);
+    }
 }
