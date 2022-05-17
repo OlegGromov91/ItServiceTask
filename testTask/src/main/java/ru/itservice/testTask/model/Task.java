@@ -28,4 +28,7 @@ public class Task {
 
     @Column(name = "task_data")
     String taskData;
+
+    @Column(name = "task_result_data")
+    String taskResultData;
 }

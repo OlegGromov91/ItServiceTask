@@ -13,6 +13,7 @@ public class TestTaskApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(TestTaskApplication.class, args);
+
 	}
 
 
@@ -21,7 +22,7 @@ public class TestTaskApplication {
 	CommandLineRunner runner(TaskRepository taskRepository) {
 		return args ->
 		{
-			taskRepository.save(Task.builder().taskData("hehehehe").taskType(TaskType.HALF_MAGIC_CUBE).build());
+			taskRepository.save(Task.builder().taskData("test").taskType(TaskType.HALF_MAGIC_CUBE).build());
 
 		};
 	}
